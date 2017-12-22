@@ -139,7 +139,7 @@ public class VehicleTelematics {
         env.execute("VehicleTelematicsProject");
     }
 
-     /** NOT DONE
+     /**
       * This function returns all the vehicles that are stopped on any segment. A vehicle is stopped when it reports at least 4 consecutive events from the same position.
       * As we can see in the notes above, we should take in consideration the records VID,XWay and Dir because we can have several different registers for the same vehicle.
       * Theoretically its not possible for a vehicle to have different XWay and Dir on consecutives Timestamps but we considered in the keys to make the program more robust.
