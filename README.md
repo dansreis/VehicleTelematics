@@ -54,7 +54,7 @@ The accident reporter should generate 5 accident alerts. (870->960, 900->990, 93
 2. __accidents.csv__: to store the output of the accident detector. Format: Time1, Time2, VID, XWay, Seg, Dir, Pos, where Time1 is the time of the first event the car stops and Time2 is the time of the fourth event the car reports to be stopped.
  
  ## Dataset
- The project dataset is in the **traffic-3xways-new.7z** compressed file.
+ The project dataset is in the **dataset** folder and contains all the dataset splited in blocks of 50mb.
  
  ## Authors
  Daniel Reis<br>
