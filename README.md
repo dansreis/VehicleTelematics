@@ -53,6 +53,9 @@ The accident reporter should generate 5 accident alerts. (870->960, 900->990, 93
 2. __avgspeedfines.csv__: to store the output of the average speed control. Format: Time1, Time2, VID, XWay, Dir, AvgSpd, where Time1 is the time of the first event of the segment and Time2 is the time of the last event of the segment.
 2. __accidents.csv__: to store the output of the accident detector. Format: Time1, Time2, VID, XWay, Seg, Dir, Pos, where Time1 is the time of the first event the car stops and Time2 is the time of the fourth event the car reports to be stopped.
  
+ ## Dataset
+ The project dataset is in the **traffic-3xways-new.7z** compressed file.
+ 
  ## Authors
  Daniel Reis<br>
  Afonso Castro
