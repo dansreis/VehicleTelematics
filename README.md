@@ -29,7 +29,7 @@ __Accident Reporter__: detects stopped vehicles on any segment. A vehicle is sto
 4. Cars that do not complete the segment (52-56) are not taken into account by the average speed control. For example 52->54  or 55->56. 
 5. A car can be stopped on the same position for more than 4 consecutive events. An accident report must be sent for each group of 4 events. 
 For example, the next figure shows 8 events for the car with identifier VID=3:
-
+<center>
 |Time   |VID   |Spd   |XWay   |Lane   |Dir   |Seg   |Pos   |
 |------:|-----:|-----:|------:|------:|-----:|-----:|-----:|
 |    870|     3|     0|      0|      1|     0|    26|139158|
@@ -44,15 +44,15 @@ For example, the next figure shows 8 events for the car with identifier VID=3:
 The accident reporter should generate 5 accident alerts. (870->960, 900->990, 930->1020, 960->1050, 990->1080).
 
 ## Program INPUT:
-* The Java program will read the events from a CSV with the format: Time, VID, Spd, XWay, Lane, Dir, Seg, Pos
+* The Java program will read the events from a CSV with the format: Time, VID, Spd, XWay, Lane, Dir, Seg, Pos.
 
 ## Program OUPUT:
 * The program must generate 3 output CSV files
-1. __speedfines.csv__: to store the output of the speed radar. Format: Time, VID, XWay, Seg, Dir, Spd
+1. __speedfines.csv__: to store the output of the speed radar. Format: Time, VID, XWay, Seg, Dir, Spd.
 2. __avgspeedfines.csv__: to store the output of the average speed control. Format: Time1, Time2, VID, XWay, Dir, AvgSpd, where Time1 is the time of the first event of the segment and Time2 is the time of the last event of the segment.
 2. __accidents.csv__: to store the output of the accident detector. Format: Time1, Time2, VID, XWay, Seg, Dir, Pos, where Time1 is the time of the first event the car stops and Time2 is the time of the fourth event the car reports to be stopped.
  
  ## Authors
- Daniel Reis
+ Daniel Reis<br>
  Afonso Castro
  
